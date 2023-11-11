@@ -1,0 +1,27 @@
+/* TODO establecer variables */
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  /* asegura que si la imagen no carga, el texto alternativo se renderiza en itálico para que se pueda diferenciar */
+  font-style: italic;
+
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
