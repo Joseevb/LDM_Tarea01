@@ -12,6 +12,7 @@
 
 body {
   min-height: 100vh;
+  position: relative;
 }
 
 img,
@@ -36,4 +37,35 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.menu-content {
+  margin: 5rem 2rem;
+  transition: all 250ms;
+  z-index: -1;
+}
+
+@keyframes slideUp {
+  from {
+    bottom: 0%;
+  }
+  to {
+    bottom: 100%;
+  }
+}
+
+/* utility classes */
+.hidden {
+  transform: translateY(50%) scaleY(0);
+  visibility: hidden;
 }
