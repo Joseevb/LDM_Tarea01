@@ -25,3 +25,15 @@ video {
   height: auto;
   max-width: 100%;
 }
+
+/* Estilos genéricos */
+
+/* Estilos específicos */
+.main-header {
+  margin-inline: 2rem;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
