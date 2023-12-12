@@ -33,6 +33,7 @@ video {
 /* Estilos genéricos */
 body {
   font-family: var(--ff-main);
+  position: relative;
 }
 
 /* Estilos específicos */
@@ -61,6 +62,21 @@ body {
   z-index: -1;
 }
 
+.post-container {
+  position: absolute;
+  inset: 50%;
+  transform: translate(-50%, -40%);
+  width: 40svw;
+  height: 80svh;
+
+  border: 1px solid black;
+}
+
+.switch-tema {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
 /* utility classes */
 .hidden {
   transform: translateY(50%) scaleY(0);
