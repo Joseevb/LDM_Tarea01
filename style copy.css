@@ -1,0 +1,138 @@
+/* TODO establecer variables */
+:root {
+  --ff-main: system-ui;
+}
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+img,
+picture,
+svg,
+video {
+  /* asegura que si la imagen no carga, el texto alternativo se renderiza en itálico para que se pueda diferenciar */
+  font-style: italic;
+
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Estilos genéricos */
+body {
+  font-family: var(--ff-main);
+  position: relative;
+}
+
+/* Estilos específicos */
+.main-header {
+  margin-inline: 2rem;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.menu-content {
+  margin: 5rem 2rem;
+  transition: all 250ms;
+  z-index: -1;
+}
+
+.post-container {
+  position: absolute;
+  inset: 50%;
+  transform: translate(-50%, -40%);
+  width: 40svw;
+  height: 80svh;
+
+  border: 1px solid black;
+}
+
+.switch-tema {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+/* utility classes */
+.hidden {
+  transform: translateY(50%) scaleY(0);
+  visibility: hidden;
+}
+
+.asideContainer1 {
+  float: right;
+  border: 1px solid black;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.asideContainer2 {
+  float: right;
+  border: 1px solid black;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.asideContainer3 {
+  float: right;
+  border: 1px solid black;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+.asideContainer4 {
+  float: right;
+  border: 1px solid black;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 35%;
+  right: 5%;
+  padding-right: 40px;
+  padding-left: 30px;
+}
