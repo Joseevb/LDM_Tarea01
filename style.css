@@ -4,6 +4,7 @@
 
   --main-color: ;
   --accent-color: ;
+  --bg-color: white;
   --bg-color: rgb(255, 255, 255);
 
   --txt-accent-color: #f72585;
@@ -56,6 +57,25 @@ a {
   color: inherit;
 }
 
+/* utility classes */
+.hidden {
+  transform: translateY(50%) scaleY(0);
+  visibility: hidden;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.btn {
+  border-radius: 32px;
+  border: 2px inset var(--txt-accent-color);
+  padding: 15px 40px;
+  box-shadow: 0.5rem 0.5rem black;
+
+  /* background-color: #f72585; */
+}
+
 /* Estilos específicos */
 .main-header {
   padding: 1.5rem 2rem;
@@ -76,25 +96,33 @@ a {
   width: calc(100% - 4rem);
 }
 
-<<<<<<< HEAD
 .logo {
   width: 14rem;
-=======
+}
+
 .search-bar {
   padding: 0.5rem 1rem;
   border-radius: 32px;
   border-color: var(--txt-accent-color);
->>>>>>> 4012b6531a68c65e0317f58e943140660554320d
+  box-shadow: 0.5rem 0.5rem black;
 }
 
 .menu-container {
   position: fixed;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 20%;
   padding: 1rem;
   bottom: 1rem;
   left: 1rem;
+}
+
+.menu-btn {
+  font-size: 1.25rem;
+  cursor: pointer;
+  width: 50%;
+  padding-block: 0.5rem;
 }
 
 .menu-content {
@@ -106,14 +134,41 @@ a {
 .post-container {
   position: absolute;
   inset: 50%;
-  transform: translate(-50%, -25%);
+  transform: translate(-50%, -30%);
   width: 40svw;
   height: min-content;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 32px;
 }
 
 .post {
-  margin-block: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.post h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3rem;
+  padding-bottom: 1rem;
+}
+
+.interaction-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.interaction {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.25rem;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+  width: 7rem;
+}
+
+.interaction:hover {
+  transform: scale(1.15);
 }
 
 .trending-container {
@@ -136,24 +191,3 @@ a {
   bottom: 1rem;
   right: 1rem;
 }
-/* utility classes */
-.hidden {
-  transform: translateY(50%) scaleY(0);
-  visibility: hidden;
-}
-
-.fixed {
-  position: fixed;
-<<<<<<< HEAD
-}
-=======
-}
-
-.btn {
-  border-radius: 32px;
-  border: 4px inset var(--txt-accent-color);
-  padding: 15px 40px;
-  border-color: purple;
-  background-color: #f72585;
-}
->>>>>>> 4012b6531a68c65e0317f58e943140660554320d
