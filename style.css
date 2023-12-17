@@ -4,7 +4,7 @@
 
   --main-color: ;
   --accent-color: ;
-  --bg-color: lightgray;
+  --bg-color: rgb(255, 255, 255);
 
   --txt-accent-color: #f72585;
 }
@@ -13,7 +13,6 @@
   --main-color: ;
   --accent-color: ;
   --bg-color: #343a40;
-
   --txt-accent-color: #f72585;
 }
 
@@ -74,6 +73,10 @@ a {
   margin-top: 4rem;
   border-bottom: 1px solid black;
   width: calc(100% - 4rem);
+}
+
+.logo {
+  width: 14rem;
 }
 
 .menu-container {
