@@ -36,18 +36,32 @@ body {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /* Estilos específicos */
 .main-header {
-  margin-inline: 2rem;
-  padding-block: 1.5rem;
-  border-bottom: 1px solid black;
+  padding: 1.5rem 2rem;
+  /* padding-block: 1.5rem; */
+  /* border-bottom: 1px solid black; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+
+.main-header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 4rem;
+  border-bottom: 1px solid black;
+  width: calc(100% - 4rem);
 }
 
 .menu-container {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   width: 20%;
@@ -65,15 +79,33 @@ body {
 .post-container {
   position: absolute;
   inset: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -25%);
   width: 40svw;
-  height: 80svh;
-
+  height: min-content;
   border: 1px solid black;
 }
 
+.post {
+  margin-block: 2rem;
+}
+
+.trending-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 20%;
+  right: 5%;
+}
+
+.trending-container h2 {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+
 .switch-tema {
-  position: absolute;
+  position: fixed;
   bottom: 1rem;
   right: 1rem;
 }
@@ -81,4 +113,8 @@ body {
 .hidden {
   transform: translateY(50%) scaleY(0);
   visibility: hidden;
+}
+
+.fixed {
+  position: fixed;
 }
