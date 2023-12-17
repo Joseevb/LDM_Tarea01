@@ -70,21 +70,22 @@ a {
 .btn {
   border-radius: 32px;
   border: 2px inset var(--txt-accent-color);
-  padding: 15px 40px;
+  padding: 0.5rem 1.5rem;
   box-shadow: 0.5rem 0.5rem black;
-
-  /* background-color: #f72585; */
+  cursor: pointer;
 }
 
 /* Estilos específicos */
 .main-header {
   padding: 1.5rem 2rem;
-  /* padding-block: 1.5rem; */
-  /* border-bottom: 1px solid black; */
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  background-color: var(--bg-color);
+  box-shadow: 0 2rem 2rem var(--bg-color);
+  z-index: 999;
 }
 
 .main-header::after {
@@ -105,6 +106,7 @@ a {
   border-radius: 32px;
   border-color: var(--txt-accent-color);
   box-shadow: 0.5rem 0.5rem black;
+  transform: translateX(-35%);
 }
 
 .menu-container {
@@ -132,9 +134,8 @@ a {
 }
 
 .post-container {
-  position: absolute;
-  inset: 50%;
-  transform: translate(-50%, -30%);
+  margin-inline: auto;
+  margin-top: 7%;
   width: 40svw;
   height: min-content;
   border: 2px solid black;
@@ -147,7 +148,7 @@ a {
 }
 
 .post h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 3rem;
   padding-bottom: 1rem;
