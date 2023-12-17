@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-
+    <link
+      rel="shortcut icon"
+      href="./public/single_logo_hermes.png"
+      type="image/x-icon"
+    />
     <title>Hermes - Home</title>
+    <script src="./index.js" defer></script>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header fixed">
       <img class="logo" src="./public/logo_hermes.png" alt="Logo de Hermes" />
       <input
         class="search-bar"
@@ -34,14 +39,16 @@
     </nav>
     <main class="post-container">
       <div class="post">
-        <a href="/pages/publicacion01.html">
-          <h2>Cuervo o Espía de Odín</h2>
-        </a>
+        <header>
+          <span class="user"><a href="#">@Crusader341</a></span>
+          <a href="7pages/publicacion01.html">
+            <h2>
+              ¿Cuervo o Espía de Odín? Descifrando el misterio de estos pájaros
+              astutos
+            </h2>
+          </a>
+        </header>
         <div class="post-content">
-          <p>
-            "¿Cuervo o Espía de Odín? Descifrando el misterio de estos pájaros
-            astutos"
-          </p>
           <p>
             Introducción: Los cuervos han sido símbolos de inteligencia y
             misterio a lo largo de la historia, y en la mitología nórdica, Odín,
@@ -56,34 +63,66 @@
             a su comportamiento inteligente. ¿Podrían estos pájaros estar
             llevando a cabo una tradición ancestral de vigilancia?
           </p>
-          <a href="/pages/publicacion01.html" class="more">Mostrar mas</a>
-          <div class="interaction-container">
-            <img
-              class="interaction"
-              src="./public/me-gusta.png"
-              alt="Imagen mostrando un corazón simbolizando un me gusta"
-            />
-          </div>
+          <a href="/pages/publicacion01.html" class="more">Ver comentarios</a>
+          <img
+            class="interaction"
+            src="./public/me-gusta.png"
+            alt="Imagen mostrando un corazón simbolizando un me gusta"
+          />
         </div>
       </div>
       <div class="post">
         <a href="publicacion02.html">
-          <h2>Fronteras entre lo Físico e Imaginario</h2>
+          <header>
+            <span class="user"><a href="#">@PacoRamirez</a></span>
+            <a href="7pages/publicacion02.html">
+              <h2>"Explorando las Fronteras entre lo Físico e Imaginario"</h2>
+            </a>
+          </header>
+          <div class="post-content"></div>
         </a>
       </div>
       <div class="post">
         <a href="publicacion03.html">
-          <h2>Monologo de segismundo</h2>
+          <header>
+            <span class="user"><a href="#">@SpartanKing</a></span>
+            <a href="7pages/publicacion03.html">
+              <h2>El Monologo de segismundo</h2>
+            </a>
+          </header>
+          <div class="post-content"></div>
         </a>
       </div>
       <div class="post">
         <a href="publicacion04.html">
-          <h2>img1</h2>
+          <header>
+            <span class="user"><a href="#">@Jorge54</a></span>
+            <a href="7pages/publicacion04.html">
+              <h2>Un caballero hablando con la muerte</h2>
+            </a>
+          </header>
+          <div class="post-content">
+            <img
+              alt="Un caballero hablando con la muerte"
+              src="./public/img1.jpg"
+            />
+          </div>
         </a>
       </div>
       <div class="post">
         <a href="publicacion05.html">
-          <h2>img2</h2>
+          <header>
+            <span class="user"><a href="#">@Sukuna-san</a></span>
+            <a href="7pages/publicacion05.html">
+              <h2>Yo en medio de un examen</h2>
+            </a>
+          </header>
+          <div class="post-content">
+            <img
+              alt='Un gato con la palabra "Empty" señalando a su cabeza, simbolizando que esta está vacía'
+              src="./public/img2.jpg"
+            />
+          </div>
         </a>
       </div>
     </main>
