@@ -125,11 +125,6 @@ a {
   border: 2px inset var(--txt-accent-color);
   border-radius: 32px;
   padding: 0.5rem 1rem;
-  transition: border-style 500ms ease-in-out;
-}
-
-.trending-container h2:hover {
-  border-style: solid;
 }
 
 .switch-tema {
