@@ -11,13 +11,14 @@
     <header class="main-header">
       <img class="logo" src="./public/logo_hermes.png" alt="Logo de Hermes" />
       <input
-        class="buscador"
+        class="search-bar"
         type="search"
         name="buscador"
         id="buscador"
         title="Buscador"
+        placeholder="🔍"
       />
-      <button class="btn login" type="button">Login</button>
+      <button class="btn login" type="button">login</button>
     </header>
     <nav class="menu-container">
       <div class="menu-content hidden" id="menu-content">
@@ -29,13 +30,34 @@
         debitis consequuntur deleniti dolor ducimus adipisci temporibus
         explicabo similique officiis, ipsam fugit. Temporibus?
       </div>
-      <button type="button" class="btn menu-btn" id="menu-btn">MENU</button>
+      <button type="button" class="btn menu-btn" id="menu-btn">menu</button>
     </nav>
     <main class="post-container">
       <div class="post">
-        <a href="publicacion01.html">
+        <a href="/pages/publicacion01.html">
           <h2>Cuervo o Espía de Odín</h2>
         </a>
+        <div class="post-content">
+          <p>
+            "¿Cuervo o Espía de Odín? Descifrando el misterio de estos pájaros
+            astutos"
+          </p>
+          <p>
+            Introducción: Los cuervos han sido símbolos de inteligencia y
+            misterio a lo largo de la historia, y en la mitología nórdica, Odín,
+            el dios principal, tenía dos cuervos llamados Huginn y Muninn, que
+            volaban por el mundo y le informaban sobre lo que veían. ¿Podría ser
+            que los cuervos que vemos hoy en día sean descendientes de estos
+            mensajeros alados?
+          </p>
+          <p>
+            La conexión mitológica: Los cuervos eran considerados sagrados en la
+            mitología nórdica, y la conexión con Odín agrega un matiz intrigante
+            a su comportamiento inteligente. ¿Podrían estos pájaros estar
+            llevando a cabo una tradición ancestral de vigilancia?
+          </p>
+          <a href="/pages/publicacion01.html" class="more">Mostrar mas</a>
+        </div>
       </div>
       <div class="post">
         <a href="publicacion02.html">
@@ -58,22 +80,19 @@
         </a>
       </div>
     </main>
-    <aside></aside>
-    <button type="button" title="switch-tema" class="switch-tema">☀️</button>
-
-    <!-- JavaScript -->
-    <script>
-      // añade los elementos del menu
-      const menuBtn = document.getElementById("menu-btn");
-      const menuContent = document.getElementById("menu-content");
-
-      /*al presionar el botón, revisa si el menu tiene la clase "hidden"
-      si la tiene, la elimina, si no, la añade*/
-      menuBtn.addEventListener("click", () => {
-        menuContent.classList.contains("hidden")
-          ? menuContent.classList.remove("hidden")
-          : menuContent.classList.add("hidden");
-      });
-    </script>
+    <aside class="trending-container">
+      <h2>Trending Topics</h2>
+      <a href="#">Last month</a>
+      <a href="#">Hot</a>
+      <a href="#">Newest</a>
+    </aside>
+    <button
+      id="theme-switch"
+      type="button"
+      title="switch-tema"
+      class="switch-tema"
+    >
+      ☀️
+    </button>
   </body>
 </html>
