@@ -134,3 +134,11 @@ a {
 .fixed {
   position: fixed;
 }
+
+.btn {
+  border-radius: 32px;
+  border: 4px inset var(--txt-accent-color);
+  padding: 15px 40px;
+  border-color: purple;
+  background-color: #f72585;
+}
