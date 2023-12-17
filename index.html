@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
 
     <title>Hermes - Home</title>
+    <script src="/index.js" defer></script>
   </head>
   <body>
     <header class="main-header fixed">
-      <img class="logo" src="/public/logo.png" alt="Logo de Hermes" />
+      <a href="/index.html"
+        ><img class="logo" src="/public/logo.png" alt="Logo de Hermes"
+      /></a>
       <input
         class="buscador"
         type="search"
@@ -33,7 +36,7 @@
     </nav>
     <main class="post-container">
       <div class="post">
-        <a href="publicacion01.html">
+        <a href="/pages/publicacion01.html">
           <h2>Cuervo o Espía de Odín</h2>
         </a>
         <div class="post-content">
@@ -55,11 +58,11 @@
             a su comportamiento inteligente. ¿Podrían estos pájaros estar
             llevando a cabo una tradición ancestral de vigilancia?
           </p>
-          <a href="publicacion01.html" class="more">Mostrar mas</a>
+          <a href="/pages/publicacion01.html" class="more">Mostrar mas</a>
         </div>
       </div>
       <div class="post">
-        <a href="publicacion02.html">
+        <a href="/pages/publicacion02.html">
           <h2>Fronteras entre lo Físico e Imaginario</h2>
         </a>
         <div class="post-content">
@@ -79,11 +82,11 @@
             crear realidades alternativas y cómo estas afectan nuestra
             percepción del mundo físico?
           </p>
-          <a href="publicacion02.html" class="more">Mostrar mas</a>
+          <a href="/pages/publicacion02.html" class="more">Mostrar mas</a>
         </div>
       </div>
       <div class="post">
-        <a href="publicacion03.html">
+        <a href="/pages/publicacion03.html">
           <h2>Monologo de Segismundo</h2>
         </a>
         <div class="post-content">
@@ -102,10 +105,10 @@
             aunque ninguno lo entiende.
           </p>
         </div>
-        <a href="publicacion03.html" class="more">Mostrar mas</a>
+        <a href="/pages/publicacion03.html" class="more">Mostrar mas</a>
       </div>
       <div class="post">
-        <a href="publicacion04.html">
+        <a href="/pages/publicacion04.html">
           <h2>Un caballero hablando con la muerte</h2>
         </a>
         <div class="post-content">
@@ -116,7 +119,7 @@
         </div>
       </div>
       <div class="post">
-        <a href="publicacion05.html">
+        <a href="/pages/publicacion05.html">
           <h2>Yo en exámenes</h2>
         </a>
         <div class="post-content">
@@ -133,21 +136,13 @@
       <a href="#">Hot</a>
       <a href="#">Newest</a>
     </aside>
-    <button type="button" title="switch-tema" class="switch-tema">☀️</button>
-
-    <!-- JavaScript -->
-    <script>
-      // añade los elementos del menu
-      const menuBtn = document.getElementById("menu-btn");
-      const menuContent = document.getElementById("menu-content");
-
-      /*al presionar el botón, revisa si el menu tiene la clase "hidden"
-      si la tiene, la elimina, si no, la añade*/
-      menuBtn.addEventListener("click", () => {
-        menuContent.classList.contains("hidden")
-          ? menuContent.classList.remove("hidden")
-          : menuContent.classList.add("hidden");
-      });
-    </script>
+    <button
+      id="theme-switch"
+      type="button"
+      title="switch-tema"
+      class="switch-tema"
+    >
+      ☀️
+    </button>
   </body>
 </html>

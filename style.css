@@ -1,7 +1,22 @@
 /* TODO establecer variables */
 :root {
   --ff-main: system-ui;
+
+  --main-color: ;
+  --accent-color: ;
+  --bg-color: lightgray;
+
+  --txt-accent-color: #f72585;
 }
+
+.dark {
+  --main-color: ;
+  --accent-color: ;
+  --bg-color: #343a40;
+
+  --txt-accent-color: #f72585;
+}
+
 /* CSS RESET */
 *,
 *::before,
@@ -34,6 +49,7 @@ video {
 body {
   font-family: var(--ff-main);
   position: relative;
+  background-color: var(--bg-color);
 }
 
 a {
