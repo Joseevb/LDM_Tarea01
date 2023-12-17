@@ -5,6 +5,7 @@
   --main-color: ;
   --accent-color: ;
   --bg-color: white;
+  --bg-color: rgb(255, 255, 255);
 
   --txt-accent-color: #f72585;
 }
@@ -13,7 +14,6 @@
   --main-color: ;
   --accent-color: ;
   --bg-color: #343a40;
-
   --txt-accent-color: #f72585;
 }
 
@@ -96,6 +96,10 @@ a {
   width: calc(100% - 4rem);
 }
 
+.logo {
+  width: 14rem;
+}
+
 .search-bar {
   padding: 0.5rem 1rem;
   border-radius: 32px;
@@ -130,7 +134,7 @@ a {
 .post-container {
   position: absolute;
   inset: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -30%);
   width: 40svw;
   height: min-content;
   border: 2px solid black;
@@ -160,6 +164,7 @@ a {
   font-size: 1.25rem;
   transition: 200ms ease-in-out;
   cursor: pointer;
+  width: 7rem;
 }
 
 .interaction:hover {
