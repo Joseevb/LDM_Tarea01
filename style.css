@@ -198,4 +198,13 @@ a {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+  background-color: var(--bg-color);
+  border: 0;
+  width: 3em;
+  transition: 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.switch-tema:hover {
+  transform: rotate(180deg);
 }
