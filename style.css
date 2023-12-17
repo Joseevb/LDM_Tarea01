@@ -4,7 +4,7 @@
 
   --main-color: ;
   --accent-color: ;
-  --bg-color: lightgray;
+  --bg-color: rgb(255, 255, 255);
 
   --txt-accent-color: #f72585;
 }
@@ -13,7 +13,6 @@
   --main-color: ;
   --accent-color: ;
   --bg-color: #343a40;
-
   --txt-accent-color: #f72585;
 }
 
@@ -77,10 +76,15 @@ a {
   width: calc(100% - 4rem);
 }
 
+<<<<<<< HEAD
+.logo {
+  width: 14rem;
+=======
 .search-bar {
   padding: 0.5rem 1rem;
   border-radius: 32px;
   border-color: var(--txt-accent-color);
+>>>>>>> 4012b6531a68c65e0317f58e943140660554320d
 }
 
 .menu-container {
@@ -140,6 +144,9 @@ a {
 
 .fixed {
   position: fixed;
+<<<<<<< HEAD
+}
+=======
 }
 
 .btn {
@@ -149,3 +156,4 @@ a {
   border-color: purple;
   background-color: #f72585;
 }
+>>>>>>> 4012b6531a68c65e0317f58e943140660554320d
