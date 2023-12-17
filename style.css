@@ -158,7 +158,10 @@ a {
   font-size: 1.25rem;
   transition: 200ms ease-in-out;
   cursor: pointer;
-  width: 4rem;
+  width: 3em;
+  position: absolute;
+  top: 0.1rem;
+  right: 2rem;
 }
 
 .interaction:hover {
