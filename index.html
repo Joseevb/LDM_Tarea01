@@ -6,15 +6,26 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
-      href="./public/single_logo_hermes.png"
+      href="/public/single_logo_hermes.png"
       type="image/x-icon"
     />
     <title>Hermes - Home</title>
-    <script src="./index.js" defer></script>
+    <script src="/index.js" defer></script>
   </head>
-  <body>
+  <body class="dark">
     <header class="main-header fixed">
-      <img class="logo" src="./public/logo_hermes.png" alt="Logo de Hermes" />
+      <picture>
+        <img
+          src="/public/single_logo_hermes.png"
+          alt="Logo de Hermes"
+          loading="lazy"
+          class="logo-small" />
+        <img
+          class="logo"
+          src="/public/logo_hermes.png"
+          alt="Logo de Hermes"
+          loading="lazy"
+      /></picture>
       <input
         class="search-bar"
         type="search"
@@ -42,14 +53,13 @@
       <div class="post">
         <header>
           <span class="user"><a href="#">@Crusader341</a></span>
-          <a href="#">
+          <a href="/pages/publicacion01.html">
             <h2>
               ¿Cuervo o Espía de Odín? Descifrando el misterio de estos pájaros
               astutos
             </h2>
           </a>
         </header>
-        <hr />
         <div class="post-content">
           <p>
             Introducción: Los cuervos han sido símbolos de inteligencia y
@@ -59,6 +69,7 @@
             que los cuervos que vemos hoy en día sean descendientes de estos
             mensajeros alados?
           </p>
+          <br /><br />
           <p>
             La conexión mitológica: Los cuervos eran considerados sagrados en la
             mitología nórdica, y la conexión con Odín agrega un matiz intrigante
@@ -68,7 +79,7 @@
           <a href="#" class="more">Ver comentarios</a>
           <img
             class="interaction"
-            src="./public/me-gusta.png"
+            src="/public/me-gusta.png"
             alt="Imagen mostrando un corazón simbolizando un me gusta"
           />
         </div>
@@ -119,6 +130,7 @@
             favoritas sobre este fascinante tema. ¿Dónde trazan ustedes la línea
             entre lo físico y lo imaginario en la filosofía?
           </p>
+=======
         <a href="publicacion02.html">
           <header>
             <span class="user"><a href="#">@PacoRamirez</a></span>
@@ -230,10 +242,11 @@
               src="./public/img1.jpg"
             />
           </div>
+>>>>>>> caf798a87cb6e6e726227f069a107324f1229463
           <a href="#" class="more">Ver comentarios</a>
           <img
             class="interaction"
-            src="./public/me-gusta.png"
+            src="/public/me-gusta.png"
             alt="Imagen mostrando un corazón simbolizando un me gusta"
           />
         </div>
@@ -291,8 +304,9 @@
         </header>
         <div class="post-content">
           <img
+            class="post-img"
             alt="Un caballero hablando con la muerte"
-            src="./public/img1.jpg"
+            src="/public/img1.jpg"
           />
           <a href="#" class="more">Ver comentarios</a>
           <img class="interaction" src="./public/me-gusta.png" alt="Imagen
@@ -309,19 +323,19 @@
         </header>
         <div class="post-content">
           <img
+            class="post-img"
             alt='Un gato con la palabra "Empty" señalando a su cabeza, simbolizando que esta está vacía'
-            src="./public/img2.jpg"
+            src="/public/img2.jpg"
           />
           <a href="#" class="more">Ver comentarios</a>
           <img
             class="interaction"
-            src="./public/me-gusta.png"
+            src="/public/me-gusta.png"
             alt="Imagen mostrando un corazón simbolizando un me gusta"
           />
         </div>
       </div>
     </main>
-    <!-- Menú lateral derecho -->
     <aside class="trending-container">
       <h2>Trending Topics</h2>
       <a href="#">Last month</a>
@@ -334,8 +348,11 @@
       title="dark-mode"
       class="switch-tema"
     >
+<<<<<<< HEAD
       <img src="./public/modo_oscuro.png" alt="botón de cambio a modo oscuro" />
+=======
       ◑
+>>>>>>> caf798a87cb6e6e726227f069a107324f1229463
     </button>
   </body>
 </html>

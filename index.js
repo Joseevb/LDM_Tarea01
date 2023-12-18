@@ -3,7 +3,16 @@ const menuBtn = document.getElementById("menu-btn");
 const menuContent = document.getElementById("menu-content");
 // añade el botón de cambio de tema
 const themeSwitch = document.getElementById("theme-switch");
-let darkMode = false; // lleva el estado del tema
+let darkMode = true; // lleva el estado del tema
+//
+const trendingBtn = document.getElementById("trending-btn");
+
+trendingBtn.addEventListener("click", () => {
+  const trending = document.querySelector(".trending-container");
+  trending.classList.contains("visible")
+    ? trending.classList.remove("visible")
+    : trending.classList.add("visible");
+});
 
 themeSwitch.addEventListener("click", () => {
   const body = document.querySelector("body");
@@ -24,4 +33,7 @@ menuBtn.addEventListener("click", () => {
   menuContent.classList.contains("hidden")
     ? menuContent.classList.remove("hidden")
     : menuContent.classList.add("hidden");
+  menuBtn.classList.contains("menu-btn-extend")
+    ? menuBtn.classList.remove("menu-btn-extend")
+    : menuBtn.classList.add("menu-btn-extend");
 });
