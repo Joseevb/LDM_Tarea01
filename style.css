@@ -372,3 +372,8 @@ h1 {
     top: -4rem;
   }
 }
+
+.reply-content {
+  position: absolute;
+  bottom: 2rem;
+}
