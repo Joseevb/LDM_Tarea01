@@ -397,3 +397,7 @@ h1 {
   border-radius: 28px;
   background-color: var(--accent-color);
 }
+
+.comment span {
+  color: var(--txt-accent-color);
+}
