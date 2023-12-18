@@ -4,24 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
-
     <script src="/index.js" defer></script>
     <title>Cuervo o Espía de Odín</title>
   </head>
-  <body>
-    <header class="main-header">
-      <a href="/index.html">
-        <img class="logo" src="/public/logo.png" alt="Logo de Hermes" />
-      </a>
+  <body class="dark">
+    <header class="main-header fixed">
+      <picture>
+        <img
+          src="./public/single_logo_hermes.png"
+          alt="Logo de Hermes"
+          loading="lazy"
+          class="logo-small" />
+        <img
+          class="logo"
+          src="./public/logo_hermes.png"
+          alt="Logo de Hermes"
+          loading="lazy"
+      /></picture>
       <input
-        class="buscador"
+        class="search-bar"
         type="search"
         name="buscador"
         id="buscador"
         title="Buscador"
+        placeholder="⌕ Buscar en Hermes.."
       />
-      <button class="btn login" type="button">Login</button>
+      <button class="btn login" type="button">login</button>
     </header>
+    <nav class="menu-container">
+      <div class="menu-content hidden" id="menu-content">
+        <h2>categorías</h2>
+        <ul>
+          <li>filosofía</li>
+          <li>humor</li>
+          <li>actualidad</li>
+        </ul>
+      </div>
+      <button type="button" class="btn menu-btn" id="menu-btn">menu</button>
+    </nav>
     <nav class="menu-container">
       <div class="menu-content hidden" id="menu-content">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, officiis
@@ -35,39 +55,58 @@
       <button type="button" class="btn menu-btn" id="menu-btn">MENU</button>
     </nav>
     <main class="post-container">
-      <p>
-        "¿Cuervo o Espía de Odín? Descifrando el misterio de estos pájaros
-        astutos"
-      </p>
-      <p>
-        Introducción: Los cuervos han sido símbolos de inteligencia y misterio a
-        lo largo de la historia, y en la mitología nórdica, Odín, el dios
-        principal, tenía dos cuervos llamados Huginn y Muninn, que volaban por
-        el mundo y le informaban sobre lo que veían. ¿Podría ser que los cuervos
-        que vemos hoy en día sean descendientes de estos mensajeros alados?
-      </p>
-      <p>
-        La conexión mitológica: Los cuervos eran considerados sagrados en la
-        mitología nórdica, y la conexión con Odín agrega un matiz intrigante a
-        su comportamiento inteligente. ¿Podrían estos pájaros estar llevando a
-        cabo una tradición ancestral de vigilancia?
-      </p>
-      <p>
-        Observaciones de comportamiento: Algunos informes anecdóticos sugieren
-        que los cuervos muestran un comportamiento notablemente astuto y que
-        parecen estar al tanto de su entorno. ¿Es posible que estén
-        observándonos y enviando información a algún tipo de "cuervo centro de
-        comando"?
-      </p>
-      <p>
-        Conclusión: ¿Los cuervos son realmente mensajeros de Odín, o simplemente
-        estamos dando rienda suelta a nuestra imaginación? ¡Comparte tus
-        pensamientos, observaciones y teorías en los comentarios! La fascinante
-        relación entre los cuervos y la mitología nórdica nos da mucho en qué
-        pensar.
-      </p>
+      <div class="post">
+        <header>
+          <span class="user"><a href="#">@Crusader341</a></span>
+          <a href="/pages/publicacion01.html">
+            <h1>
+              ¿Cuervo o Espía de Odín? Descifrando el misterio de estos pájaros
+              astutos
+            </h1>
+          </a>
+        </header>
+        <div class="post-content">
+          <p>
+            Introducción: Los cuervos han sido símbolos de inteligencia y
+            misterio a lo largo de la historia, y en la mitología nórdica, Odín,
+            el dios principal, tenía dos cuervos llamados Huginn y Muninn, que
+            volaban por el mundo y le informaban sobre lo que veían. ¿Podría ser
+            que los cuervos que vemos hoy en día sean descendientes de estos
+            mensajeros alados?
+          </p>
+          <br /><br />
+          <p>
+            La conexión mitológica: Los cuervos eran considerados sagrados en la
+            mitología nórdica, y la conexión con Odín agrega un matiz intrigante
+            a su comportamiento inteligente. ¿Podrían estos pájaros estar
+            llevando a cabo una tradición ancestral de vigilancia?
+          </p>
+          <img
+            class="interaction"
+            src="/public/me-gusta.png"
+            alt="Imagen mostrando un corazón simbolizando un me gusta"
+          />
+        </div>
+      </div>
     </main>
-    <aside></aside>
-    <button type="button" title="switch-tema" class="switch-tema">☀️</button>
+    <button
+      id="trending-btn"
+      class="trending-small-button"
+      type="button"
+    ></button>
+    <aside class="trending-container">
+      <h2>Trending Topics</h2>
+      <a href="#">Last month</a>
+      <a href="#">Hot</a>
+      <a href="#">Newest</a>
+    </aside>
+    <button
+      id="theme-switch"
+      type="button"
+      title="dark-mode"
+      class="switch-tema"
+    >
+      <img src="/public/modo_oscuro.png" alt="botón de cambio a modo oscuro" />
+    </button>
   </body>
 </html>
