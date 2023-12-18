@@ -8,17 +8,73 @@
     <title>Un caballero hablando con la muerte</title>
     <script src="/index.js" defer></script>
   </head>
-  <body>
-    <header>
-      <span class="user"><a href="#">@Jorge54</a></span>
-      <a href="7pages/publicacion04.html">
-        <h2>Un caballero hablando con la muerte</h2>
-      </a>
+  <body class="dark">
+    <header class="main-header fixed">
+      <picture>
+        <img
+          src="/public/single_logo_hermes.png"
+          alt="Logo de Hermes"
+          loading="lazy"
+          class="logo-small" />
+        <img
+          class="logo"
+          src="/public/logo_hermes.png"
+          alt="Logo de Hermes"
+          loading="lazy"
+      /></picture>
+      <input
+        class="search-bar"
+        type="search"
+        name="buscador"
+        id="buscador"
+        title="Buscador"
+        placeholder="⌕ Buscar en Hermes.."
+      />
+      <button class="btn login" type="button">login</button>
     </header>
+    <nav class="menu-container">
+      <div class="menu-content hidden" id="menu-content">
+        <h2>categorías</h2>
+        <ul>
+          <li>filosofía</li>
+          <li>humor</li>
+          <li>actualidad</li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="menu-container">
+      <div class="menu-content hidden" id="menu-content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, officiis
+        quos vitae expedita quia sunt! Sit unde corrupti esse repellat nobis
+        consequuntur mollitia harum. Tenetur mollitia ad necessitatibus
+        praesentium! Possimus. Veniam nulla molestias aliquid fuga dolorem
+        ratione tempore quasi iure, ut aliquam maiores provident ad, et officia
+        debitis consequuntur deleniti dolor ducimus adipisci temporibus
+        explicabo similique officiis, ipsam fugit. Temporibus?
+      </div>
+      <button type="button" class="btn menu-btn" id="menu-btn">menu</button>
+    </nav>
     <main class="post-container">
-      <h2>Un caballero hablando con la muerte</h2>
-      <img alt="Un caballero hablando con la muerte" src="./public/img1.jpg" />
-      <div class="reply-content">
+      <div class="post">
+        <div class="post-content">
+          <header>
+          <span class="user"><a href="#">@Jorge54</a></span>
+          <a href="#">
+            <h2>Un caballero hablando con la muerte</h2>
+          </a>
+        </header>
+        <div class="post-content">
+          <img
+            class="post-img"
+            alt="Un caballero hablando con la muerte"
+            src="/public/img1.jpg"
+          />
+          <img
+            class="interaction"
+            src="/public/me-gusta.png"
+            alt="Imagen mostrando un corazón simbolizando un me gusta"
+          />
+          <div class="reply-content">
         <span class="user"><a href="#">@MurphyCrybaby</a></span>
         <p>Una temática gastada</p>
         <span class="user"><a href="#">@CapitanBigote</a></span>
@@ -26,9 +82,27 @@
           Siempre que veo este tipo de cosas pienso en que debían sentir antes
           de la batalla
         </p>
+        </div>
       </div>
     </main>
-    <aside></aside>
-    <button type="button" title="switch-tema" class="switch-tema">☀️</button>
+    <button
+      id="trending-btn"
+      class="trending-small-button"
+      type="button"
+    ></button>
+    <aside class="trending-container">
+      <h2>Trending Topics</h2>
+      <a href="#">Last month</a>
+      <a href="#">Hot</a>
+      <a href="#">Newest</a>
+    </aside>
+    <button
+      id="theme-switch"
+      type="button"
+      title="dark-mode"
+      class="switch-tema"
+    >
+      <img src="/public/modo_oscuro.png" alt="botón de cambio a modo oscuro" />
+    </button>
   </body>
 </html>
