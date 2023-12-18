@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>That's me</title>
+    <script src="/index.js" defer></script>
+  </head>
+  <body class="dark">
+    <header class="main-header fixed">
+      <picture>
+        <img
+          src="/public/single_logo_hermes.png"
+          alt="Logo de Hermes"
+          loading="lazy"
+          class="logo-small" />
+        <img
+          class="logo"
+          src="/public/logo_hermes.png"
+          alt="Logo de Hermes"
+          loading="lazy"
+      /></picture>
+      <input
+        class="search-bar"
+        type="search"
+        name="buscador"
+        id="buscador"
+        title="Buscador"
+        placeholder="⌕ Buscar en Hermes.."
+      />
+      <button class="btn login" type="button">login</button>
+    </header>
+    <nav class="menu-container">
+      <div class="menu-content hidden" id="menu-content">
+        <h2>categorías</h2>
+        <ul>
+          <li>filosofía</li>
+          <li>humor</li>
+          <li>actualidad</li>
+        </ul>
+      </div>
+      <button type="button" class="btn menu-btn" id="menu-btn">menu</button>
+    </nav>
+    <main class="post-container">
+      <a class="btn volver" href="/index.html">Volver</a>
+      <div class="post">
+        <header>
+          <span class="user"><a href="#">@Sukuna-san</a></span>
+          <a href="#">
+            <h2>Yo en medio de un examen</h2>
+          </a>
+        </header>
+        <div class="post-content">
+          <img
+            class="post-img"
+            alt='Un gato con la palabra "Empty" señalando a su cabeza, simbolizando que esta está vacía'
+            src="/public/img2.jpg"
+          />
+          <a href="#" class="more">Ver comentarios</a>
+          <img
+            class="interaction"
+            src="/public/me-gusta.png"
+            alt="Imagen mostrando un corazón simbolizando un me gusta"
+          />
+        </div>
+      </div>
+    </main>
+    <div class="reply-content">
+      <h2>Comentarios:</h2>
+      <div class="comment">
+        <span class="user"><a href="#">@MurphyCrybaby</a></span>
+        <p>Para eso se estudia.</p>
+      </div>
+      <div class="comment">
+        <span class="user"><a href="#">@CapitanBigote</a></span>
+        <p>Jajajaja yo en la vida</p>
+      </div>
+    </div>
+    <button
+      aria-label="boton que muestra u oculta la barra de trending"
+      id="trending-btn"
+      class="trending-small-button"
+      type="button"
+    ></button>
+    <aside class="trending-container">
+      <h2>Trending Topics</h2>
+      <a href="#">Last month</a>
+      <a href="#">Hot</a>
+      <a href="#">Newest</a>
+    </aside>
+    <button
+      id="theme-switch"
+      type="button"
+      title="dark-mode"
+      class="switch-tema"
+    >
+      <img src="/public/modo_oscuro.png" alt="botón de cambio a modo oscuro" />
+    </button>
+  </body>
+</html>
