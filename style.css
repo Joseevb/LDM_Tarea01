@@ -374,6 +374,26 @@ h1 {
 }
 
 .reply-content {
-  position: absolute;
-  bottom: 2rem;
+  margin-block: 2rem 6rem;
+  padding-inline: 1rem;
+}
+
+.reply-content h2 {
+  border-radius: 32px;
+  border: 2px inset var(--txt-accent-color);
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0.5rem 0.5rem black;
+  width: 40%;
+  margin-block: 2rem;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+.comment {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px inset var(--txt-accent-color);
+  border-radius: 28px;
+  background-color: var(--accent-color);
 }

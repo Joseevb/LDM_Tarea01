@@ -46,8 +46,7 @@
     <main class="post-container">
       <a class="btn volver" href="/index.html">Volver</a>
       <div class="post">
-        <div class="post-content">
-          <header>
+        <header>
           <span class="user"><a href="#">@Jorge54</a></span>
           <a href="#">
             <h2>Un caballero hablando con la muerte</h2>
@@ -64,22 +63,25 @@
             src="/public/me-gusta.png"
             alt="Imagen mostrando un corazón simbolizando un me gusta"
           />
-          <div class="reply-content">
-        <div class="comment">
-          <span class="user"><a href="#">@MurphyCrybaby</a></span>
-          <p>Una temática gastada</p>
-        </div>
-        <div class="comment">
-          <span class="user"><a href="#">@CapitanBigote</a></span>
-          <p>
-            Siempre que veo este tipo de cosas pienso en que debían sentir antes
-            de la batalla
-          </p>
-        </div>
         </div>
       </div>
     </main>
+    <div class="reply-content">
+      <h2>Comentarios:</h2>
+      <div class="comment">
+        <span class="user"><a href="#">@MurphyCrybaby</a></span>
+        <p>Una temática gastada</p>
+      </div>
+      <div class="comment">
+        <span class="user"><a href="#">@CapitanBigote</a></span>
+        <p>
+          Siempre que veo este tipo de cosas pienso en que debían sentir antes
+          de la batalla
+        </p>
+      </div>
+    </div>
     <button
+      aria-label="boton que muestra u oculta la barra de trending"
       id="trending-btn"
       class="trending-small-button"
       type="button"
